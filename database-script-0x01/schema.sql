@@ -1,4 +1,4 @@
- CREATE DATABASE airbnb_database;
+CREATE DATABASE airbnb_database;
 Use airbnb_database;
 
 CREATE TABLE User (
