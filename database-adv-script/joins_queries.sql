@@ -14,7 +14,7 @@ INNER JOIN Property p ON p.property_id = p.property_id;
 
 -- LEFT JOIN
 SELECT 
-	 p.property_id,
+	   p.property_id,
      p.name AS Property_name,
      r.review_id,
      r.rating,
@@ -22,7 +22,10 @@ SELECT
 FROM 
    Property p
 LEFT JOIN 
-   Review r ON p.property_id = r.property_id;
+   Review r ON p.property_id = r.property_id
+ORDER BY 
+    p.property_id,  
+    r.rating DESC; 
 
 -- FULL OUTER JOIN
 -- Solution using FULL OUTER JOIN (conceptual, for non-MySQL databases)
